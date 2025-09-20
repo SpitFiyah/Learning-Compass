@@ -313,6 +313,13 @@
             "type": "YouTube Playlist",
             "description": "A fantastic resource for understanding how to design large-scale systems.",
             "tags": ["System Design", "Interviews", "Free"]
+          },
+          {
+            "name": "FreeCodeCamp - Responsive Web Design",
+            "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+            "type": "Interactive Course",
+            "description": "Hands-on interactive web design curriculum for HTML & CSS",
+            "tags":  ["HTML", "CSS", "Beginner", "Free"]
           }
         ]
       }
