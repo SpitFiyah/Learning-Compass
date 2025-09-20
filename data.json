@@ -2,6 +2,146 @@
   "learningHubData": {
     "sections": [
       {
+        "id": "core-programming",
+        "title": "Core Programming",
+        "description": "Foundational programming courses from the OSSU curriculum.",
+        "resources": [
+          {
+            "name": "Systematic Program Design (UBC, edX)",
+            "url": "https://www.edx.org/course/systematic-program-design-part-1",
+            "type": "Online Course",
+            "description": "Learn systematic program design and functional programming principles.",
+            "tags": ["Programming", "Functional", "Free"]
+          },
+          {
+            "name": "Programming Languages (UW, Coursera)",
+            "url": "https://www.coursera.org/learn/programming-languages",
+            "type": "Online Course",
+            "description": "Covers the basic concepts of programming languages and interpreters.",
+            "tags": ["Programming", "Languages", "Free to Audit"]
+          },
+          {
+            "name": "Object-Oriented Design (UCSD, Coursera)",
+            "url": "https://www.coursera.org/learn/object-oriented-design",
+            "type": "Online Course",
+            "description": "Learn object-oriented design and software architecture.",
+            "tags": ["Programming", "OOP", "Free to Audit"]
+          }
+        ]
+      },
+      {
+        "id": "core-systems",
+        "title": "Core Systems",
+        "description": "Systems and computer architecture resources from OSSU.",
+        "resources": [
+          {
+            "name": "Nand to Tetris: Build a Modern Computer (Coursera)",
+            "url": "https://www.coursera.org/learn/build-a-computer",
+            "type": "Online Course",
+            "description": "Build a computer from first principles, from logic gates to operating systems.",
+            "tags": ["Systems", "Hardware", "Free to Audit"]
+          },
+          {
+            "name": "Operating Systems: Three Easy Pieces (Book)",
+            "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+            "type": "Book",
+            "description": "A free, comprehensive book on operating systems concepts.",
+            "tags": ["Operating Systems", "Book", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "core-theory",
+        "title": "Core Theory",
+        "description": "Algorithm and theory resources from OSSU.",
+        "resources": [
+          {
+            "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms (Stanford, Coursera)",
+            "url": "https://www.coursera.org/learn/algorithms-divide-conquer",
+            "type": "Online Course",
+            "description": "Learn core algorithmic techniques for problems that arise in computing applications.",
+            "tags": ["Algorithms", "Theory", "Free to Audit"]
+          },
+          {
+            "name": "Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming (Stanford, Coursera)",
+            "url": "https://www.coursera.org/learn/algorithms-greedy",
+            "type": "Online Course",
+            "description": "Explore greedy algorithms, minimum spanning trees, and dynamic programming.",
+            "tags": ["Algorithms", "Theory", "Free to Audit"]
+          }
+        ]
+      },
+      {
+        "id": "core-security",
+        "title": "Core Security",
+        "description": "Cybersecurity fundamentals from OSSU.",
+        "resources": [
+          {
+            "name": "Cybersecurity Fundamentals (RIT, edX)",
+            "url": "https://www.edx.org/course/cybersecurity-fundamentals",
+            "type": "Online Course",
+            "description": "Introduction to cybersecurity principles and practices.",
+            "tags": ["Security", "Cybersecurity", "Free to Audit"]
+          }
+        ]
+      },
+      {
+        "id": "core-applications",
+        "title": "Core Applications",
+        "description": "Databases, machine learning, and application-focused resources from OSSU.",
+        "resources": [
+          {
+            "name": "Databases: Modeling and Theory (Stanford, edX)",
+            "url": "https://www.edx.org/course/databases-5-sql",
+            "type": "Online Course",
+            "description": "Covers relational databases, SQL, and data modeling.",
+            "tags": ["Databases", "SQL", "Free"]
+          },
+          {
+            "name": "Machine Learning (Stanford, Coursera)",
+            "url": "https://www.coursera.org/learn/machine-learning",
+            "type": "Online Course",
+            "description": "Andrew Ng's famous machine learning course.",
+            "tags": ["Machine Learning", "AI", "Free to Audit"]
+          }
+        ]
+      },
+      {
+        "id": "core-math",
+        "title": "Core Math",
+        "description": "Essential mathematics for computer science, including calculus and discrete math.",
+        "resources": [
+          {
+            "name": "Calculus 1A: Differentiation (MIT)",
+            "url": "https://www.edx.org/course/calculus-1a-differentiation",
+            "type": "Online Course",
+            "description": "Learn the basics of differentiation in calculus from MIT on edX.",
+            "tags": ["Calculus", "Math", "Free"]
+          },
+          {
+            "name": "Calculus 1B: Integration (MIT)",
+            "url": "https://www.edx.org/course/calculus-1b-integration",
+            "type": "Online Course",
+            "description": "Covers the fundamentals of integration in calculus, from MIT on edX.",
+            "tags": ["Calculus", "Math", "Free"]
+          },
+          {
+            "name": "Calculus 1C: Coordinate Systems & Infinite Series (MIT)",
+            "url": "https://www.edx.org/course/calculus-1c-coordinate-systems-infinite-series",
+            "type": "Online Course",
+            "description": "Explore coordinate systems and infinite series in calculus, from MIT on edX.",
+            "tags": ["Calculus", "Math", "Free"]
+          },
+          {
+            "name": "Mathematics for Computer Science (MIT OCW)",
+            "url": "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/",
+            "type": "Online Course",
+            "description": "Discrete mathematics and proofs for computer science, from MIT OpenCourseWare.",
+            "tags": ["Discrete Math", "Math", "Free"]
+          }
+        ]
+      },
+      {
         "id": "cs-fundamentals",
         "title": "Computer Science Fundamentals",
         "description": "Start your journey here with the core concepts of computation, data structures, and algorithms that power all software.",
