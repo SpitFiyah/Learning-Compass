@@ -1,0 +1,181 @@
+{
+  "learningHubData": {
+    "sections": [
+      {
+        "id": "cs-fundamentals",
+        "title": "Computer Science Fundamentals",
+        "description": "Start your journey here with the core concepts of computation, data structures, and algorithms that power all software.",
+        "resources": [
+          {
+            "name": "Harvard's CS50x",
+            "url": "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x",
+            "type": "Online Course",
+            "description": "The definitive introduction to computer science. Engaging, comprehensive, and free.",
+            "tags": ["Beginner", "Video", "Free"]
+          },
+          {
+            "name": "Abdul Bari's Algorithms Playlist",
+            "url": "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O",
+            "type": "YouTube Playlist",
+            "description": "Legendary YouTube playlist that masterfully explains complex algorithms.",
+            "tags": ["Algorithms", "Video", "Free"]
+          },
+          {
+            "name": "GeeksforGeeks",
+            "url": "https://www.geeksforgeeks.org/",
+            "type": "Website",
+            "description": "A vast library of articles and code examples for data structures and algorithms.",
+            "tags": ["Articles", "Code", "Free"]
+          },
+          {
+            "name": "freeCodeCamp - Data Structures Course",
+            "url": "https://www.youtube.com/watch?v=RBSGKlAcrPw",
+            "type": "YouTube Course",
+            "description": "A full 8-hour YouTube course covering everything you need for data structures.",
+            "tags": ["Data Structures", "Video", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "web-development-frontend",
+        "title": "Web Development (Frontend)",
+        "description": "Learn to build beautiful and interactive user interfaces for websites and web applications.",
+        "resources": [
+          {
+            "name": "The Odin Project",
+            "url": "https://www.theodinproject.com/",
+            "type": "Interactive Platform",
+            "description": "A complete, project-based curriculum for becoming a full-stack developer.",
+            "tags": ["Full-Stack", "Project-based", "Free"]
+          },
+          {
+            "name": "MDN Web Docs",
+            "url": "https://developer.mozilla.org/",
+            "type": "Documentation",
+            "description": "The ultimate reference for all web technologies (HTML, CSS, JS).",
+            "tags": ["Reference", "Articles", "Free"]
+          },
+          {
+            "name": "Kevin Powell's YouTube Channel",
+            "url": "https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw",
+            "type": "YouTube Channel",
+            "description": "A master of CSS. His tutorials make complex CSS simple and fun.",
+            "tags": ["CSS", "Video", "Free"]
+          },
+          {
+            "name": "Fireship.io",
+            "url": "https://www.youtube.com/c/Fireship",
+            "type": "YouTube Channel",
+            "description": "Fast-paced, modern tutorials on JavaScript and popular frameworks.",
+            "tags": ["JavaScript", "Frameworks", "Video", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "web-development-backend",
+        "title": "Web Development (Backend)",
+        "description": "Power your applications by learning how to work with servers, databases, and APIs.",
+        "resources": [
+          {
+            "name": "CodeWithHarry",
+            "url": "https://www.youtube.com/c/CodeWithHarry",
+            "type": "YouTube Channel",
+            "description": "Excellent resource (Hindi/English) for Node.js, Python with Django, and databases.",
+            "tags": ["Node.js", "Python", "Hindi", "Free"]
+          },
+          {
+            "name": "Traversy Media",
+            "url": "https://www.youtube.com/c/TraversyMedia",
+            "type": "YouTube Channel",
+            "description": "Countless project-based tutorials on Node.js, Express, and databases.",
+            "tags": ["Node.js", "Projects", "Video", "Free"]
+          },
+          {
+            "name": "PostgreSQL Exercises",
+            "url": "https://pgexercises.com/",
+            "type": "Interactive Platform",
+            "description": "Practice your SQL skills with this interactive website.",
+            "tags": ["SQL", "Database", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "ai-machine-learning",
+        "title": "AI & Machine Learning",
+        "description": "Dive into the world of artificial intelligence, learning how to build models that can learn from data.",
+        "resources": [
+          {
+            "name": "Andrew Ng's ML Specialization",
+            "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+            "type": "Online Course",
+            "description": "The most famous and highly-recommended introductory course on the topic.",
+            "tags": ["Beginner", "Theory", "Free to Audit"]
+          },
+          {
+            "name": "Krish Naik's YouTube Channel",
+            "url": "https://www.youtube.com/c/KrishNaik",
+            "type": "YouTube Channel",
+            "description": "Massive collection of playlists covering everything in ML, deep learning, and data science.",
+            "tags": ["AI", "Python", "Video", "Free"]
+          },
+          {
+            "name": "Kaggle",
+            "url": "https://www.kaggle.com/",
+            "type": "Platform",
+            "description": "The best platform for practicing your ML skills with real-world datasets and competitions.",
+            "tags": ["Practice", "Datasets", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "essential-tools",
+        "title": "Essential Tools & Practices",
+        "description": "Master the essential tools and workflows that every professional developer uses daily.",
+        "resources": [
+          {
+            "name": "Git - The Simple Guide",
+            "url": "https://rogerdudler.github.io/git-guide/",
+            "type": "Website",
+            "description": "A straightforward, no-nonsense guide to getting started with Git.",
+            "tags": ["Git", "Version Control", "Free"]
+          },
+          {
+            "name": "GitHub Skills",
+            "url": "https://skills.github.com/",
+            "type": "Interactive Platform",
+            "description": "Fun, interactive courses to learn how to use GitHub effectively.",
+            "tags": ["Git", "GitHub", "Free"]
+          },
+          {
+            "name": "Learn Command Line",
+            "url": "https://www.learnenough.com/command-line-tutorial",
+            "type": "Website",
+            "description": "A free and simple introduction to the command line interface.",
+            "tags": ["Tools", "Command Line", "Free"]
+          }
+        ]
+      },
+      {
+        "id": "career-prep",
+        "title": "Career Preparation",
+        "description": "Prepare for the job market with interview practice, resume tips, and portfolio guidance.",
+        "resources": [
+          {
+            "name": "LeetCode",
+            "url": "https://leetcode.com/",
+            "type": "Platform",
+            "description": "The premier platform for practicing coding interview questions.",
+            "tags": ["Interviews", "Algorithms", "Freemium"]
+          },
+          {
+            "name": "Gaurav Sen's System Design Playlist",
+            "url": "https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo5hDYws0p_TCDZkgc8G7D",
+            "type": "YouTube Playlist",
+            "description": "A fantastic resource for understanding how to design large-scale systems.",
+            "tags": ["System Design", "Interviews", "Free"]
+          }
+        ]
+      }
+    ]
+  }
+}

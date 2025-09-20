@@ -1,0 +1,198 @@
+/* === 1. THEME & VARIABLES === */
+:root {
+    --bg-color: #111827;
+    --section-bg: #1F2937;
+    --glass-bg: rgba(55, 65, 81, 0.5); /* Semi-transparent for glass effect */
+    
+    --text-color: #D1D5DB;
+    --header-color: #F9FAFB;
+    
+    --primary-color: #8B5CF6; /* Purple */
+    --secondary-color: #34D399; /* Green/Teal for contrast */
+    
+    --border-color: rgba(139, 92, 246, 0.2); /* Faint purple border */
+    --shadow-color: rgba(0,0,0,0.4);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Roboto Mono', monospace;
+}
+
+/* === 2. GLOBAL & BACKGROUND STYLES === */
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px;
+    overflow-x: hidden; /* Prevent horizontal scroll from glows */
+}
+
+/* Subtle background texture and gradient */
+.background-glow {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, var(--primary-color) 0, var(--bg-color) 50%);
+    opacity: 0.1;
+    z-index: -1;
+    animation: rotateGlow 20s linear infinite;
+}
+
+@keyframes rotateGlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* === 3. LAYOUT & TYPOGRAPHY === */
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: var(--header-color);
+}
+
+.learning-section h2 {
+    font-size: 1.8em;
+    color: var(--header-color);
+}
+
+/* === 4. FILTER BUTTONS === */
+#filter-container {
+    text-align: center;
+    padding: 16px 0;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: var(--section-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 8px 18px;
+    margin: 6px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+    color: var(--header-color);
+    border-color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--header-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+/* === 5. MODERN RESOURCE CARDS === */
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.resource-card {
+    /* Glassmorphism Effect */
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden; /* Important for the glowing border effect */
+    
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+/* Glowing Border Effect on Hover */
+.resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(167, 139, 250, 0.4), /* Lighter purple */
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -1;
+}
+
+.resource-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: rgba(167, 139, 250, 0.4);
+}
+
+.resource-card:hover::before {
+    opacity: 1;
+}
+
+.resource-card h3 {
+    margin-top: 0;
+    color: var(--header-color);
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resource-card h3 .bx { /* Icon style */
+    font-size: 1.4em;
+    color: var(--secondary-color);
+}
+
+.tags span {
+    display: inline-block;
+    background-color: var(--section-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+/* === 6. ANIMATIONS === */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.resource-card.hidden {
+    display: none; /* simpler hiding */
+}
+.learning-section.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
