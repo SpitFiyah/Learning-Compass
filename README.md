@@ -23,8 +23,9 @@ A curated, modern web app to help you discover the best resources for learning c
 - Fork this repo
 - Add or improve resources in `data.json`
 - Submit a pull request
-- 
+
 ## Demo
-- [Live website] [csroadmap-learn.vercel.app]
+[Live Website] [https://csroadmap-learn.vercel.app/]
+
 ## License
 MIT License
