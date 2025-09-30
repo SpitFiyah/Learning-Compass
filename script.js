@@ -112,23 +112,66 @@ function getIconForType(type) {
  */
 function setupFilters(allResourceCards, allSections) {
     const filterContainer = document.getElementById('filter-container');
-    filterContainer.innerHTML = ''; // Clear old filters
-    const allTags = new Set();
+    filterContainer.innerHTML = '';
+
+    // Define a broad set of tags to use as filters
+    const broadTags = [
+        'Recommended', 'Programming', 'C Programming', 'Algorithms', 'Theory', 'Systems', 'Security', 'Databases', 'Math',
+        'Beginner', 'Web', 'AI', 'Machine Learning', 'Tools', 'Interviews', 'Projects', 'Video', 'Book', 'Free', 'Freemium', 'Certificate'
+    ];
+
+    // Map resource tags to broad tags
+    function mapToBroadTags(tags) {
+        const tagSet = new Set();
+        tags.forEach(tag => {
+            const t = tag.trim().toLowerCase();
+            if (["recommended"].includes(t)) tagSet.add("Recommended");
+            if (["free", "free to audit"].includes(t)) tagSet.add("Free");
+            else if (["ai", "machine learning"].includes(t)) tagSet.add("Machine Learning");
+            else if (["sql", "database", "databases"].includes(t)) tagSet.add("Databases");
+            else if (["beginner"].includes(t)) tagSet.add("Beginner");
+            else if (["web", "html", "css", "javascript", "frontend", "backend", "full-stack"].includes(t)) tagSet.add("Web");
+            else if (["algorithms", "data structures"].includes(t)) tagSet.add("Algorithms");
+            else if (["theory", "discrete math", "math", "calculus"].includes(t)) tagSet.add("Math");
+            else if (["security", "cybersecurity"].includes(t)) tagSet.add("Security");
+            else if (["systems", "operating systems", "hardware"].includes(t)) tagSet.add("Systems");
+            else if (["tools", "command line", "git", "github", "version control"].includes(t)) tagSet.add("Tools");
+            else if (["interviews", "system design"].includes(t)) tagSet.add("Interviews");
+            else if (["projects", "project-based", "practice"].includes(t)) tagSet.add("Projects");
+            else if (["video", "youtube", "playlist", "channel", "course"].includes(t)) tagSet.add("Video");
+            else if (["book"].includes(t)) tagSet.add("Book");
+            else if (["freemium"].includes(t)) tagSet.add("Freemium");
+            else if (["c programming"].includes(t)) tagSet.add("C Programming");
+            else if (["programming", "oop", "languages", "functional"].includes(t)) tagSet.add("Programming");
+        });
+        return Array.from(tagSet);
+    }
+
+    // Collect all broad tags present in the data
+    const presentTags = new Set();
     allResourceCards.forEach(card => {
-        card.dataset.tags.split(',').forEach(tag => allTags.add(tag));
+        const tags = card.dataset.tags.split(',');
+        mapToBroadTags(tags).forEach(t => presentTags.add(t));
     });
+
+    // Only show broad tags that are present in the data
+    const filterTags = broadTags.filter(t => presentTags.has(t));
 
     const createButton = (tag, isActive = false) => {
         const button = document.createElement('button');
         button.className = `filter-btn ${isActive ? 'active' : ''}`;
         button.textContent = tag;
         button.dataset.filter = tag;
-        button.addEventListener('click', () => handleFilterClick(tag, allResourceCards, allSections));
+        button.addEventListener('click', () => handleFilterClick(tag, allResourceCards, allSections, mapToBroadTags));
         return button;
     };
-    
+
     filterContainer.appendChild(createButton('Show All', true));
-    [...allTags].sort().forEach(tag => filterContainer.appendChild(createButton(tag)));
+    filterTags.forEach(tag => filterContainer.appendChild(createButton(tag)));
+
+    // Show all cards and sections by default
+    allResourceCards.forEach(card => card.classList.remove('hidden'));
+    allSections.forEach(section => section.classList.remove('hidden'));
 }
 
 /**
@@ -137,24 +180,23 @@ function setupFilters(allResourceCards, allSections) {
  * @param {Array<HTMLElement>} allResourceCards - Array of all resource card elements
  * @param {Array<HTMLElement>} allSections - Array of all section elements
  */
-function handleFilterClick(filter, allResourceCards, allSections) {
+function handleFilterClick(filter, allResourceCards, allSections, mapToBroadTags) {
     // Update active state on buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.filter === filter);
     });
 
-    // First, filter the individual resource cards
+    // Filter resource cards by broad tag
     allResourceCards.forEach(card => {
-        const isVisible = filter === 'Show All' || card.dataset.tags.includes(filter);
+        const tags = card.dataset.tags.split(',');
+        const broadTags = mapToBroadTags(tags);
+        const isVisible = filter === 'Show All' || broadTags.includes(filter);
         card.classList.toggle('hidden', !isVisible);
     });
 
-    // === NEW LOGIC: Hide empty sections ===
+    // Hide empty sections
     allSections.forEach(section => {
-        // Find all cards within this section that are NOT hidden
         const visibleCards = section.querySelectorAll('.resource-card:not(.hidden)');
-        
-        // If there are no visible cards, hide the whole section
         if (visibleCards.length === 0) {
             section.classList.add('hidden');
         } else {

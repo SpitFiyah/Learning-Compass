@@ -1,3 +1,20 @@
+/* === FILTER GROUPS (COMPACT FILTER UI) === */
+.filter-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 8px 8px 0;
+    background: var(--section-bg);
+    border-radius: 6px;
+    padding: 2px 8px 2px 4px;
+    box-shadow: 0 1px 4px var(--shadow-color);
+}
+.filter-group-label {
+    font-size: 0.95em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-right: 4px;
+}
 /* Hide scrollbars for a cleaner look */
 body {
     scrollbar-width: none; /* Firefox */
@@ -54,6 +71,43 @@ body {
     to { transform: rotate(360deg); }
 }
 
+/* === SOCIAL BUTTONS (FOOTER) === */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--header-color);
+    background: var(--glass-bg);
+    border: 1px solid var(--border-color);
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+.social-btn.linkedin {
+    background: #0077b5;
+    color: #fff;
+    border: none;
+}
+.social-btn.github {
+    background: #22272e;
+    color: #fff;
+    border: none;
+}
+.social-btn:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
 /* === 3. LAYOUT & TYPOGRAPHY === */
 header {
     text-align: center;
@@ -101,6 +155,60 @@ header h1.dynamic-title {
     letter-spacing: 0.5px;
 }
 
+
+    /* === MODERN TITLE REDESIGN === */
+    header {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .modern-title {
+        font-size: 3.2rem;
+        font-weight: 800;
+        letter-spacing: -2px;
+        margin: 0 0 10px 0;
+        line-height: 1.05;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        user-select: none;
+    }
+
+    .lc-gradient-modern {
+        background: linear-gradient(100deg, #8B5CF6 0%, #34D399 60%, #38BDF8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-family: var(--font-sans);
+        letter-spacing: -1px;
+    }
+
+    .lc-accent-modern {
+        color: #38BDF8;
+        font-family: var(--font-mono);
+        font-weight: 700;
+        margin-left: 0.2em;
+        letter-spacing: 0.5px;
+        text-shadow: 0 2px 12px rgba(56,189,248,0.18);
+    }
+
+    .lc-icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 0.3em;
+        background: rgba(56,189,248,0.10);
+        border-radius: 50%;
+        padding: 0.18em 0.28em;
+        box-shadow: 0 2px 8px var(--shadow-color);
+    }
+    .lc-icon-wrap .bx-compass {
+        font-size: 1.25em;
+        color: #8B5CF6;
+        filter: drop-shadow(0 0 6px #8B5CF6aa);
+    }
+
 .learning-section h2 {
     font-size: 1.8em;
     color: var(--header-color);
@@ -111,6 +219,10 @@ header h1.dynamic-title {
     text-align: center;
     padding: 16px 0;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
 }
 
 .filter-btn {
@@ -119,11 +231,12 @@ header h1.dynamic-title {
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 8px 18px;
-    margin: 6px;
+    margin: 0;
     cursor: pointer;
     font-family: var(--font-mono);
     font-size: 0.9em;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
 }
 
 .filter-btn:hover {
@@ -164,7 +277,10 @@ header h1.dynamic-title {
     
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
-    transition: transform 0.3s ease;
+    animation-delay: calc(var(--animation-order, 0) * 100ms);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Glowing Border Effect on Hover */
@@ -209,6 +325,13 @@ header h1.dynamic-title {
     color: var(--secondary-color);
 }
 
+.tags {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
 .tags span {
     display: inline-block;
     background-color: var(--section-bg);
@@ -218,8 +341,7 @@ header h1.dynamic-title {
     border-radius: 15px;
     font-family: var(--font-mono);
     font-size: 0.8em;
-    margin-right: 6px;
-    margin-top: 10px;
+    white-space: nowrap;
 }
 
 /* === 6. ANIMATIONS === */

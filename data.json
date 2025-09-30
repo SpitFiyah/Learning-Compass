@@ -1,6 +1,83 @@
 {
   "learningHubData": {
     "sections": [
+        {
+          "id": "c-programming",
+          "title": "C Programming Certifications",
+          "description": "Master C programming with these certification courses, from basics to advanced concepts.",
+          "resources": [
+            {
+              "name": "C Programming for Beginners Certification (Udemy)",
+              "url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+              "type": "Online Course",
+              "description": "Comprehensive C programming course with certification. Covers syntax, pointers, memory management, and more.",
+              "tags": ["C Programming", "Beginner", "Paid", "Certificate"]
+            },
+            {
+              "name": "Advanced C Programming Course (Coursera)",
+              "url": "https://www.coursera.org/specializations/c-programming",
+              "type": "Specialization",
+              "description": "Master advanced C programming concepts with hands-on projects and earn a verified certificate.",
+              "tags": ["C Programming", "Advanced", "Free to Audit", "Certificate"]
+            },
+            {
+              "name": "C Programming with Linux Professional Certificate (edX)",
+              "url": "https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux",
+              "type": "Professional Certificate",
+              "description": "Learn C programming and Linux together, earn a verified professional certificate from Dartmouth.",
+              "tags": ["C Programming", "Linux", "Free to Audit", "Certificate"]
+            },
+            {
+              "name": "Introduction to C Programming (FreeCodeCamp)",
+              "url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+              "type": "Online Course",
+              "description": "Free certification course covering C programming fundamentals with hands-on exercises.",
+              "tags": ["C Programming", "Beginner", "Free", "Certificate"]
+            },
+            {
+              "name": "C Programming Master Course (CodeCademy)",
+              "url": "https://www.codecademy.com/learn/learn-c",
+              "type": "Interactive Course",
+              "description": "Interactive C programming course with hands-on coding exercises and certification.",
+              "tags": ["C Programming", "Interactive", "Paid", "Certificate"]
+            }
+             ,{
+                "name": "Scaler Topics: C Programming (Free)",
+                "url": "https://www.scaler.com/topics/c/",
+                "type": "Online Course",
+                "description": "A comprehensive, free C programming course by Scaler Topics. Covers basics to advanced topics, includes quizzes and coding practice. No certificate, but great for learning and interview prep.",
+                "tags": ["C Programming", "Beginner", "Free", "Practice"]
+              },
+              {
+                "name": "Data Structures with C (NPTEL, IIT Kharagpur)",
+                "url": "https://nptel.ac.in/courses/106105085",
+                "type": "Online Course",
+                "description": "Advanced course covering data structures implementation in C. Learn from IIT Kharagpur faculty with programming assignments and examples.",
+                "tags": ["C Programming", "Data Structures", "Advanced", "Free", "Certificate", "Recommended"]
+              },
+              {
+                "name": "Problem Solving with C (NPTEL, IIT Kharagpur)",
+                "url": "https://nptel.ac.in/courses/106105171",
+                "type": "Online Course",
+                "description": "Learn problem-solving techniques using C programming. Includes algorithmic thinking and practical coding exercises from IIT Kharagpur.",
+                "tags": ["C Programming", "Problem Solving", "Algorithms", "Free", "Certificate", "Recommended"]
+              },
+              {
+                "name": "Data Structures and Algorithms with C (NPTEL)",
+                "url": "https://nptel.ac.in/courses/106106127",
+                "type": "Online Course",
+                "description": "Comprehensive course covering DSA implementation in C. Includes theoretical concepts and practical implementations with detailed examples.",
+                "tags": ["C Programming", "Data Structures", "Algorithms", "Advanced", "Free", "Certificate", "Recommended"]
+              },
+              {
+                "name": "C Language Tutorial in Hindi (CodeWithHarry)",
+                "url": "https://www.youtube.com/watch?v=7Dh73z3icd8&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
+                "type": "YouTube Playlist",
+                "description": "Complete C programming tutorial series in Hindi by CodeWithHarry. Perfect for beginners with practical examples and coding exercises.",
+                "tags": ["C Programming", "Beginner", "Video", "Hindi", "Free", "Recommended"]
+              }
+          ]
+        },
       {
         "id": "core-programming",
         "title": "Core Programming",
