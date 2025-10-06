@@ -1,0 +1,110 @@
+name: 🎓 Suggest a Course
+description: Suggest a new learning resource to add to Learning Compass
+title: "[COURSE]: "
+labels: ["course-suggestion", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a course! We appreciate your contribution to helping others learn. 🚀
+        
+  - type: input
+    id: course-name
+    attributes:
+      label: Course/Resource Name
+      description: What is the name of the course or resource?
+      placeholder: e.g., "Full Stack Open 2024"
+    validations:
+      required: true
+      
+  - type: input
+    id: course-url
+    attributes:
+      label: URL
+      description: Provide the link to the course
+      placeholder: https://
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which section should this course belong to?
+      options:
+        - C Programming
+        - Java Programming
+        - Core Programming
+        - Core Systems
+        - Core Theory
+        - Core Security
+        - Core Applications
+        - Core Math
+        - Computer Science Fundamentals
+        - Web Development (Frontend)
+        - Web Development (Backend)
+        - AI & Machine Learning
+        - Essential Tools & Practices
+        - Career Preparation
+        - Other (specify in description)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource Type
+      description: What type of resource is this?
+      options:
+        - Online Course
+        - YouTube Playlist
+        - YouTube Channel
+        - Interactive Platform
+        - Book
+        - Website
+        - Documentation
+        - Specialization
+        - Professional Certificate
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of the course (2-3 sentences)
+      placeholder: What makes this course valuable? What will learners gain?
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Tags
+      description: Select all relevant tags
+      options:
+        - label: Beginner
+        - label: Intermediate
+        - label: Advanced
+        - label: Free
+        - label: Paid
+        - label: Free to Audit
+        - label: Certificate
+        - label: Video
+        - label: Interactive
+        - label: Project-based
+        - label: Hindi
+        - label: Recommended (you think this is exceptional)
+        
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I have checked that this course is not already listed
+          required: true
+        - label: The course URL is valid and accessible
+          required: true
+        - label: This is a legitimate educational resource
+          required: true

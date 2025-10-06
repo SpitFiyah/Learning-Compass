@@ -116,7 +116,7 @@ function setupFilters(allResourceCards, allSections) {
 
     // Define a broad set of tags to use as filters
     const broadTags = [
-        'Recommended', 'Programming', 'C Programming', 'Algorithms', 'Theory', 'Systems', 'Security', 'Databases', 'Math',
+        'Recommended', 'Programming', 'C Programming', 'Java', 'Algorithms', 'Theory', 'Systems', 'Security', 'Databases', 'Math',
         'Beginner', 'Web', 'AI', 'Machine Learning', 'Tools', 'Interviews', 'Projects', 'Video', 'Book', 'Free', 'Freemium', 'Certificate'
     ];
 
@@ -142,6 +142,7 @@ function setupFilters(allResourceCards, allSections) {
             else if (["book"].includes(t)) tagSet.add("Book");
             else if (["freemium"].includes(t)) tagSet.add("Freemium");
             else if (["c programming"].includes(t)) tagSet.add("C Programming");
+            else if (["java"].includes(t)) tagSet.add("Java");
             else if (["programming", "oop", "languages", "functional"].includes(t)) tagSet.add("Programming");
         });
         return Array.from(tagSet);

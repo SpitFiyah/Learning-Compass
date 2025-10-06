@@ -78,6 +78,55 @@
               }
           ]
         },
+        {
+          "id": "java-programming",
+          "title": "Java Programming Certifications",
+          "description": "Comprehensive Java courses and certification paths — free and paid — for beginners through advanced learners.",
+          "resources": [
+            {
+              "name": "Java Programming (MOOC.fi)",
+              "url": "https://java-programming.mooc.fi/",
+              "type": "Online Course",
+              "description": "University of Helsinki's free, self-paced Java Programming I & II course. Includes extensive exercises and certificates available via the MOOC.fi profile completions page.",
+              "tags": ["Java", "Beginner", "Free", "Certificate", "Recommended"]
+            },
+            {
+              "name": "CodeWithHarry - Java Tutorials (Playlist)",
+              "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q",
+              "type": "YouTube Playlist",
+              "description": "Beginner-friendly Java tutorials by CodeWithHarry. Practical examples and Hindi/English explanations — great for hands-on learning.",
+              "tags": ["Java", "Beginner", "Video", "Free", "Recommended"]
+            },
+            {
+              "name": "Abdul Bari - Java SE Programming (Udemy)",
+              "url": "https://www.udemy.com/course/java-se-programming/?couponCode=PMNVD2025",
+              "type": "Online Course",
+              "description": "Abdul Bari's comprehensive Java SE Programming course on Udemy. In-depth coverage of core Java concepts with excellent teaching methodology. Highly recommended for conceptual clarity.",
+              "tags": ["Java", "Paid", "Video", "Recommended"]
+            },
+            {
+              "name": "Java Programming and Software Engineering Fundamentals (Coursera)",
+              "url": "https://www.coursera.org/specializations/java-programming",
+              "type": "Specialization",
+              "description": "A multi-course specialization covering Java programming, data structures, and software engineering fundamentals. Free to audit, paid for verified certificate.",
+              "tags": ["Java", "Specialization", "Free to Audit", "Certificate"]
+            },
+            {
+              "name": "Java Programming: Complete Beginner to Advanced (Udemy)",
+              "url": "https://www.udemy.com/course/java-programming-complete-beginner-to-advanced/",
+              "type": "Online Course",
+              "description": "Popular Udemy course covering core Java from basics to advanced topics with exercises and a completion certificate.",
+              "tags": ["Java", "Beginner", "Paid", "Certificate"]
+            },
+            {
+              "name": "Java In-Depth: Become a Complete Java Engineer (Udemy)",
+              "url": "https://www.udemy.com/course/java-in-depth-become-a-complete-java-engineer/",
+              "type": "Online Course",
+              "description": "Comprehensive paid course on Udemy that covers modern Java development practices and interview preparation.",
+              "tags": ["Java", "Advanced", "Paid", "Certificate"]
+            }
+          ]
+        },
       {
         "id": "core-programming",
         "title": "Core Programming",
