@@ -87,10 +87,6 @@ Found a bug? [Open a Bug Report](https://github.com/SpitFiyah/Learning-Compass/i
 MIT License - Feel free to use, modify, and share!
 
 ---
-
-> *"The beautiful thing about learning is that no one can take it away from you."*  
-> **— Crafted with curiosity & passion for every soul seeking knowledge**
-
 [![GitHub stars](https://img.shields.io/github/stars/SpitFiyah/Learning-Compass?style=social)](https://github.com/SpitFiyah/Learning-Compass/stargazers)
 [![Suggest a Course](https://img.shields.io/badge/Suggest-a%20Course-brightgreen)](https://github.com/SpitFiyah/Learning-Compass/issues/new?assignees=&labels=course-suggestion%2Cenhancement&template=course-suggestion.yml&title=%5BCOURSE%5D%3A+)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](CONTRIBUTING.md)
