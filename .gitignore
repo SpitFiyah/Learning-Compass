@@ -1,0 +1,46 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+*.key
+*.pem
+secrets.json
+config.local.js
+
+# API keys and credentials (common patterns)
+*secret*
+*password*
+*credentials*
+
+# Node modules (if project evolves to use npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Test coverage
+coverage/
+.nyc_output/
