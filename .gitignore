@@ -1,0 +1,66 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
+
+# API keys and credentials
+**/secrets.json
+**/config/secrets.*
+credentials.json
+secrets.yaml
+secrets.yml
+
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+
+# Local development
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Build artifacts (if any are added in the future)
+/dist/
+/build/
+/out/
+
+# Node modules (if project evolves to use npm/yarn)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python virtual environments (if project evolves)
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Database files (if any are added)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
