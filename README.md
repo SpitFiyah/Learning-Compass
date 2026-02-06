@@ -45,12 +45,12 @@ Learning-Compass/
 
 ## 🤝 How to Contribute
 
-We welcome contributions from everyone! Whether you're a developer or just passionate about education, there are many ways to help:
+I welcome contributions from everyone! Whether you're a developer or just passionate about education, there are many ways to help:
 
 ### 🎓 Suggest a Course (No Coding Required!)
 1. Click **[Suggest a Course](https://github.com/SpitFiyah/Learning-Compass/issues/new?assignees=&labels=course-suggestion%2Cenhancement&template=course-suggestion.yml&title=%5BCOURSE%5D%3A+)**
 2. Fill out the form with course details
-3. Submit! We'll review and add it
+3. Submit! I'll review and add it
 
 ### 💻 Direct Contribution (For Developers)
 1. Fork this repository

@@ -21,7 +21,7 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: How can we reproduce this bug?
+      description: How can I reproduce this bug?
       placeholder: |
         1. Go to '...'
         2. Click on '...'

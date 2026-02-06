@@ -15,7 +15,7 @@ async function initializeApp() {
     } catch (error) {
         console.error('Initialization failed:', error);
         document.getElementById('learning-hub-container').innerHTML = 
-            '<p>Sorry, we could not load the learning resources.</p>';
+            '<p>Sorry, I could not load the learning resources.</p>';
     }
 }
 
@@ -211,7 +211,7 @@ function handleFilterClick(filter, allResourceCards, allSections, mapToBroadTags
  * Adds the glowing mouse-tracking effect to all cards
  */
 function setupCardHoverEffect() {
-    // We need to delegate this event to the main container
+    // I need to delegate this event to the main container
     // so it also works on cards that are hidden and then re-shown.
     const container = document.getElementById('learning-hub-container');
     container.addEventListener('mousemove', e => {

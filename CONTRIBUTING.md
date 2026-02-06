@@ -1,6 +1,6 @@
 # Contributing to Learning Compass 🧭
 
-Thank you for your interest in contributing! We welcome contributions from everyone, whether you're a developer or just passionate about education.
+Thank you for your interest in contributing! I welcome contributions from everyone, whether you're a developer or just passionate about education.
 
 ## 🎓 How to Suggest a Course
 
@@ -8,7 +8,7 @@ Thank you for your interest in contributing! We welcome contributions from every
 1. **Click the "Suggest a Course" button** on our website, OR
 2. **[Open a Course Suggestion Issue](https://github.com/SpitFiyah/Learning-Compass/issues/new?assignees=&labels=course-suggestion%2Cenhancement&template=course-suggestion.yml&title=%5BCOURSE%5D%3A+)** on GitHub
 3. Fill out the form with course details
-4. Submit! We'll review and add it to the site
+4. Submit! I'll review and add it to the site
 
 ### For Developers (Direct Contribution)
 If you're comfortable with Git and JSON, you can directly submit a Pull Request:
